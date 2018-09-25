@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zwt.dao.CompassDAO">
+    <resultMap id="SflpScheduledTasksMap" type="com.zwt.model.SflpScheduledTasks">
+        <result column="id" property="id" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="store_code" property="storeCode" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+        <result column="user_code" property="userCode" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+        <result column="user_name" property="userName" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+        <result column="advice_growth_target" property="adviceGrowthTarget" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="growth_target" property="growthTarget" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="selling_cost" property="sellingCost" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="plan_id" property="planId" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="plan_name" property="planName" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+        <result column="trigger_cardinality" property="triggerCardinality" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="start_time" property="startTime" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="end_time" property="endTime" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="callback_time" property="callbackTime" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="created_time" property="createdTime" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+        <result column="is_delete" property="isDelete" javaType="java.lang.Integer" jdbcType="TINYINT"></result>
+        <result column="status" property="status" javaType="java.lang.Integer" jdbcType="TINYINT"></result>
+        <result column="act_id" property="actId" javaType="java.lang.Integer" jdbcType="INTEGER"></result>
+    </resultMap>
+
+    <sql id="BaseColumList">
+        id, store_code, user_code, user_name, advice_growth_target, growth_target, selling_cost, plan_id, plan_name,trigger_cardinality,
+         start_time, end_time, callback_time, created_time, is_delete, status, act_id
+    </sql>
+
+</mapper>
